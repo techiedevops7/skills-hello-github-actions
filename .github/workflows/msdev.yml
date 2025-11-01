@@ -33,6 +33,6 @@ jobs:
 
       # upload alerts to security tab
       - name: upload alerts to security tab
-        uses: Github/codeql-action/upload-sarif@v2
+        uses: Github/codeql-action/upload-sarif@v4
         with:
          sarif_file: ${{steps.msdo,outputs,sariffile}}
